@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "enchantpoints",
+  "version": "${version}",
+  "name": "EnchantPoints",
+  "description": "A shared enchantment-point budget across a player's whole inventory. Over-limit items are temporarily disabled, never deleted.",
+  "authors": ["EnchantPoints"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.enchantpoints.EnchantPointsMod"],
+    "client": ["dev.enchantpoints.client.EnchantPointsClient"]
+  },
+  "mixins": [
+    "enchantpoints.mixins.json",
+    { "config": "enchantpoints.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

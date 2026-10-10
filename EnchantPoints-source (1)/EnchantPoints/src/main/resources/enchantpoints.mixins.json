@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "dev.enchantpoints.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "LivingEntityMixin",
+    "ScreenHandlerMixin",
+    "ForgingScreenHandlerAccessor",
+    "AnvilScreenHandlerMixin",
+    "EnchantmentScreenHandlerMixin"
+  ],
+  "injectors": { "defaultRequire": 1 }
+}
